@@ -65,11 +65,12 @@
 <button type="button" class="btn btn-success">ema15 : {{dat.ema15}}</button>
 <button type="button" class="btn btn-danger">ema5 : {{dat.ema5}}</button>
 <button type="button" class="btn btn-warning">normVol :{{dat.normVol}}</button>
-          <div>
-          <button type="button" class="btn btn-success">Random Forest Model accuracy : {{dat.ema15}}</button>
-<button type="button" class="btn btn-danger">KNN Model accuracy: {{dat.ema5}}</button>
-<button type="button" class="btn btn-warning">ENSEMBLE accurracy :{{dat.normVol}}</button>
-              </div>
+          <div><b class="text-center">Model Accuracy : </b>
+                   <button type="button" class="btn btn-primary">Random Forest Model : {{dat.RF_Accuracy}}%</button>
+<button type="button" class="btn btn-secondary">KNN Model : {{dat.KNN_Accuracy}}%</button>
+<button type="button" class="btn btn-success">Ensemble Model : {{dat.ENSEMBLE_Accuracy}}%</button>
+
+          </div>
 
       </div>
       <div class="modal-footer">

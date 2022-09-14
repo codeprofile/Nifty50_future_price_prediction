@@ -1,4 +1,4 @@
-from Nifty50_future_price_prediction.constants import *
+from constants import *
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier, VotingClassifier
 from sklearn.neighbors import KNeighborsClassifier
@@ -134,7 +134,7 @@ def cross_Validation(data):
     print('KNN Accuracy = ' + str(sum(knn_RESULTS) / len(knn_RESULTS)))
     print('ENSEMBLE Accuracy = ' + str(sum(ensemble_RESULTS) / len(ensemble_RESULTS)))
 
-    return {"RF_Accuracy" : str(sum(rf_RESULTS) / len(rf_RESULTS)) , "KNN_Accuracy": str(sum(knn_RESULTS) / len(knn_RESULTS)) , "ENSEMBLE Accuracy":str(sum(ensemble_RESULTS) / len(ensemble_RESULTS))}
+    return {"RF_Accuracy" : str(sum(rf_RESULTS) / len(rf_RESULTS)) , "KNN_Accuracy": str(sum(knn_RESULTS) / len(knn_RESULTS)) , "ENSEMBLE_Accuracy":str(sum(ensemble_RESULTS) / len(ensemble_RESULTS))}
 
 
 

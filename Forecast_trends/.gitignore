@@ -1,2 +1,4 @@
-stock
+../env
+../.idea
+__pycache__/
 

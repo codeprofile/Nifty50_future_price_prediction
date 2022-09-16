@@ -16,4 +16,4 @@ COPY . .
 EXPOSE 5000
 
 #Run the command
-CMD gunicorn main:app
+CMD ["gunicorn", "main:app"]
